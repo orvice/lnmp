@@ -2,6 +2,7 @@
 
 #https://github.com/orvice/lnmp
 
+
 #Add Dotdeb
 echo "deb http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list
 echo "deb-src http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list
@@ -16,6 +17,8 @@ add-apt-repository ‘deb http://mirror.jmu.edu/pub/mariadb/repo/5.5/debian whee
 
 #Update
 apt-get update
+apt-get upgrade
+apt-get remove -y apache2 apache2-doc apache2-utils apache2.2-common apache2.2-bin apache2-mpm-prefork apache2-doc apache2-mpm-worker  
 
 #Install Nginx
 apt-get install -y nginx-full -y
