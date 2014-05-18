@@ -1,7 +1,9 @@
 #!/bin/bash
-
+#
 #https://github.com/orvice/lnmp
-
+#@orvice
+# htpp://orvice.org
+# last update 2014-5-18
 
 #Add Dotdeb
 echo "deb http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list
@@ -11,9 +13,10 @@ apt-key add  dotdeb.gpg
 
 
 #Add MariaDB
-
-apt-key adv –recv-keys –keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
-add-apt-repository ‘deb http://mirror.jmu.edu/pub/mariadb/repo/5.5/debian wheezy main’
+# https://downloads.mariadb.org/mariadb/repositories/#mirror=osuosl&distro=Debian&distro_release=wheezy&version=5.5
+apt-get install python-software-properties -y
+apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xcbcb082a1bb943db
+add-apt-repository 'deb http://ftp.osuosl.org/pub/mariadb/repo/5.5/debian wheezy main'
 
 #Update
 apt-get update
@@ -24,7 +27,6 @@ apt-get remove -y apache2 apache2-doc apache2-utils apache2.2-common apache2.2-b
 apt-get install -y nginx-full -y
 
 #Install MariaDB
-apt-get install python-software-properties -y
 apt-get install mariadb-server -y
 
 #Install PHP 
