@@ -1,8 +1,9 @@
 #!/bin/bash
 #
-#https://github.com/orvice/lnmp
-#@orvice
+# https://github.com/orvice/lnmp
+# @orvice
 # htpp://orvice.org
+# orvice@gmail.com
 # last update 2014-5-20
 
 
