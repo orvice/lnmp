@@ -4,7 +4,14 @@
 # @orvice
 # http://orvice.org
 # orvice@gmail.com
-# last update 2014-5-20
+# last update 2014-8-25
+
+
+# Check if user is root
+if [ $(id -u) != "0" ]; then
+    echo "Error: You must be root to run this script "
+    exit 1
+fi
 
 #Add MariaDB
 # https://downloads.mariadb.org/mariadb/repositories/#mirror=osuosl&distro=Debian&distro_release=wheezy&version=5.5
@@ -40,3 +47,9 @@ apt-get install php5-fpm php5-gd php5-mysql php5-memcache php5-curl memcached -y
 
 #Start Nginx
 service nginx start
+
+#Add group&user: www and mysql
+groupadd www
+useradd -s /sbin/nologin -M -g www www
+groupadd mysql
+useradd -s /sbin/nologin -M -g mysql mysql
