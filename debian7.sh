@@ -2,7 +2,7 @@
 #
 # https://github.com/orvice/lnmp
 # @orvice
-# htpp://orvice.org
+# http://orvice.org
 # orvice@gmail.com
 # last update 2014-5-20
 
@@ -25,6 +25,7 @@ apt-get install mariadb-server -y
 #Add Dotdeb
 echo "deb http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list
 echo "deb-src http://packages.dotdeb.org wheezy all" >> /etc/apt/sources.list
+cd /tmp
 wget http://www.dotdeb.org/dotdeb.gpg 
 apt-key add  dotdeb.gpg
 
