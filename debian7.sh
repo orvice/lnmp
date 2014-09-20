@@ -70,3 +70,8 @@ mkdir vhost
 wget http://img.orx.me/lnmp/nginx/nginx.conf
 cd /etc/nginx/vhost
 wget http://img.orx.me/lnmp/nginx/vhost/default.conf
+
+#Edit php5-fpm
+cd /etc/php5/fpm/pool.d
+rm www.conf
+wget http://img.orx.me/lnmp/php-fpm/www.conf
