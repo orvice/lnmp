@@ -43,7 +43,7 @@ apt-get remove -y apache2 apache2-doc apache2-utils apache2.2-common apache2.2-b
 apt-get install -y nginx-full -y
 
 #Install PHP
-apt-get install php5-fpm php5-gd php5-mysql php5-memcache php5-curl memcached -y
+apt-get install php5-fpm php5-gd php5-mysql php5-memcache php5-curl php5-cli memcached -y
 
 #Start Nginx
 service nginx start
