@@ -55,7 +55,7 @@ groupadd mysql
 useradd -s /sbin/nologin -M -g mysql mysql
 
 #Add dir
-mkdir /homw/www
+mkdir /home/www
 mkdir /home/www/default
 chown www:www /home/www -R
 
