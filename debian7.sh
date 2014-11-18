@@ -4,7 +4,7 @@
 # @orvice
 # http://orvice.org
 # orvice@gmail.com
-# last update 2014-8-25
+# last update 2014-11-18
 
 
 # Check if user is root
