@@ -75,3 +75,12 @@ wget http://img.orx.me/lnmp/nginx/vhost/default.conf
 cd /etc/php5/fpm/pool.d
 rm www.conf
 wget http://img.orx.me/lnmp/php-fpm/www.conf
+
+#touch
+mkdir /usr/share/nginx/www/
+cd /usr/share/nginx/www/
+touch 50x.html
+
+#restart
+service nginx restart
+service php5-fpm restart
