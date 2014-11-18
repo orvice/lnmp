@@ -4,10 +4,7 @@
 # @orvice
 # htpp://orvice.org
 # orvice@gmail.com
-# last update 2014-5-20
-
-
-
+# last update 2014-11-18
 
 #Add MariaDB
 # https://downloads.mariadb.org/mariadb/repositories/#mirror=osuosl&distro=Debian&distro_release=wheezy&version=5.5
@@ -21,5 +18,3 @@ apt-get upgrade
 
 #Install MariaDB
 apt-get install mariadb-server -y
-
-
