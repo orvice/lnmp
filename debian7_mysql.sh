@@ -65,7 +65,7 @@ chown www:www /home/www -R
 cd /etc/nginx
 rm nginx.conf
 mkdir vhost
-wget https://raw.githubusercontent.com/orvice/lnmp/master/nginx.conf
+wget https://raw.githubusercontent.com/orvice/lnmp/master/nginx/nginx.conf
 cd /etc/nginx/vhost
 wget https://raw.githubusercontent.com/orvice/lnmp/master/nginx/vhost/default.conf
 
